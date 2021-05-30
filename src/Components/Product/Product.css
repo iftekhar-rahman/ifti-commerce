@@ -1,0 +1,16 @@
+.products-wrap{
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.products-wrap:last-child{
+    margin-bottom: 0;    
+}
+.products-wrap .left{
+    flex-basis: 20%;
+}
+.products-wrap .right{
+    flex-basis: 80%;
+    margin-left: 20px;
+}

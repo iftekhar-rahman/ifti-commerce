@@ -1,0 +1,19 @@
+.logo img{
+    max-width: 250px;
+}
+.mainmenu {
+    background-color: #000;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+.mainmenu ul li{
+    display: inline-block;
+}
+.mainmenu ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0 10px;
+    display: block;
+}

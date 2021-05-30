@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+img{
+  max-width: 100%;
+  height: auto;  
+}
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +40,36 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* Home page */
+/* .about-admission-process .elementor-column-wrap div, .about-admission-process .elementor-column-wrap h2 {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.about-admission-process .elementor-column-wrap h2 a {
+    display: block;
+    width: 100%;
+    padding: 125px 0;
+} */
+/* .about-admission-process .single-admission-process .elementor-widget-wrap div, .about-admission-process .single-admission-process .elementor-widget-wrap h2 {
+  height: 300px !important;
+  display: block;
+}
+.about-admission-process .single-admission-process .elementor-widget-wrap h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-admission-process .single-admission-process .elementor-widget-wrap h2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 127px;
+} 
+about-admission-process
+*/
