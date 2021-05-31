@@ -1,11 +1,12 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { useHistory } from 'react-router';
 import fakeData from '../../fakeData';
 import { getDatabaseCart, processOrder, removeFromDatabaseCart } from '../../utilities/databaseManager';
 import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
-import happyImage from '../../img/giphy.gif';
+// import happyImage from '../../img/giphy.gif';
 
 
 
@@ -14,10 +15,9 @@ const Review = () => {
 
     const [orderPlaced, setOrderPlaced] = useState(false);
 
-    const handlePlaceOrder = () => {
-        setCart([]);
-        setOrderPlaced(true);
-        processOrder();
+    const history = useHistory();
+    const handleProceedCheckout = () => {
+        history.push('/shipment');
     }
 
     // remove product from UI and Database
@@ -39,10 +39,10 @@ const Review = () => {
         setCart(cartProducts)
     }, [])
 
-    let thankyou;
-    if(orderPlaced){
-        thankyou = <img src={happyImage} alt="" />   
-    }
+    // let thankyou;
+    // if(orderPlaced){
+    //     thankyou = <img src={happyImage} alt="" />   
+    // }
 
     return (
         <section className="review-area pt-5 pb-5">
@@ -56,11 +56,11 @@ const Review = () => {
                                 product={pd}
                                 ></ReviewItem>)
                         }
-                        { thankyou }
+                        
                     </div>
                     <div className="col-lg-3">
                         <Cart cart={cart}>
-                            <button onClick={handlePlaceOrder} className="btn btn-danger">Place order</button>
+                            <button onClick={handleProceedCheckout} className="btn btn-danger">Proceed Checkout</button>
                         </Cart>
                     </div>
                 </div>
